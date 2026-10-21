@@ -134,9 +134,10 @@ supported apps show the work live as Athena changes it.
 </p>
 
 Generate short videos **with sound** through Athena-Engine's LTX 2.5 service,
-from a description or an image. Choose landscape, portrait, square, 4:3, 3:4
-or a custom size within the engine's limits. Jobs run in a queue and the
-finished clip arrives in the chat. Generate and edit images through a
+from a description or an image. Choose landscape, portrait, square, 4:3, 3:4,
+HD 720p, Full HD 1080p (when the chat model can lend its memory, today Qwen)
+or a custom size up to 1920 pixels per side. Jobs run in a queue, the chat
+shows how far each one has got, and the finished clip arrives in the chat. Generate and edit images through a
 configured Codex subscription, or generate new images with an OpenAI API
 account.
 
