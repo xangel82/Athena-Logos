@@ -1,9 +1,12 @@
 # Installing Athena Logos on macOS
 
 For Macs with Apple Silicon (M1 or later). The program is signed with a
-Developer ID and notarized by Apple. You need
-[Athena-Engine](https://github.com/xangel82/Athena-Engine) running on a machine
-of your network.
+Developer ID and notarized by Apple. Connect to
+[Athena-Engine](https://github.com/xangel82/Athena-Engine) or another
+**OpenAI-compatible server**, local or hosted.
+
+The examples below use Athena-Engine's defaults. For another server, enter
+its API base address, model name and API key in **Settings → AI Engine**.
 
 ## 1. Download and unpack
 

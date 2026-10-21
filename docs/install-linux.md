@@ -1,8 +1,12 @@
 # Installing Athena Logos on Linux
 
 For Linux on arm64: NVIDIA DGX Spark, ASUS Ascent GX10 and other ARM 64-bit
-machines (tested on Ubuntu 24.04). It can run on the same machine as
-[Athena-Engine](https://github.com/xangel82/Athena-Engine) or on another one.
+machines (tested on Ubuntu 24.04). Connect to
+[Athena-Engine](https://github.com/xangel82/Athena-Engine) or another
+**OpenAI-compatible server**, local or hosted.
+
+The examples below use Athena-Engine's defaults. For another server, enter
+its API base address, model name and API key in **Settings → AI Engine**.
 
 ## 1. Download and unpack
 

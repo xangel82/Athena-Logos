@@ -1,8 +1,11 @@
 # Installing Athena Logos on Windows
 
-For Windows 10 and 11 on x64 PCs. You need
-[Athena-Engine](https://github.com/xangel82/Athena-Engine) running on this PC or
-on another machine of your network.
+For Windows 10 and 11 on x64 PCs. Connect to
+[Athena-Engine](https://github.com/xangel82/Athena-Engine) or another
+**OpenAI-compatible server**, local or hosted.
+
+The examples below use Athena-Engine's defaults. For another server, enter
+its API base address, model name and API key in **Settings → AI Engine**.
 
 ## 1. Download and unpack
 
