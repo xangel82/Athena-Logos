@@ -57,6 +57,68 @@ then [download Athena Logos](https://github.com/xangel82/athena-logos/releases/l
 This repository contains the executables, installation guides and licence.
 The source code is not public.
 
+## Real use cases
+
+These are things Athena has done, start to finish, in conversations on a home
+server. Nothing was scripted in advance.
+
+### A 3D printer that watches itself
+
+*"There is a camera on my 3D printer. Can you get the video stream?"*
+
+Athena probed the printer on the home network and read the code of its web
+interface to find where the camera should be. The port was closed. She searched
+the forums and found that a firmware update had removed the local video stream,
+then explained the fix and its risks before touching anything. Once the owner
+enabled root access from the printer's own screen, she read before writing,
+started the video service that already ships in the firmware, and added one
+small startup script. She checked its checksum and syntax and tested
+start, stop and restart before putting it in place. The print kept going.
+
+Then: *"Can you build an agent that checks the print and tells me if
+something is wrong?"* Every 15 minutes, while the printer is printing, the
+agent reads its status, compares two camera frames to make sure the head is
+moving, and looks at the picture for spaghetti, a part coming loose or a jam.
+It sends a Telegram message only when something looks wrong.
+
+*Uses: commands on the PC, web search and pages, the camera frames read by
+PhotoCraft, memory, an agent on a schedule, Telegram alerts.*
+
+### From a sentence to a part you can print
+
+*"I need a sloped channel with high sides for water, 10 to 15 cm long."*
+Athena wrote the geometry, generated a closed, printable STL (150 × 60 mm,
+20 mm sides, no supports needed) and drew the technical drawing in CADCraft
+(section, side view and plan, as DXF). She handed the STL over in the chat,
+ready to download for the slicer; changing four numbers regenerates it.
+
+*Uses: CADCraft, files and commands in the working folder, file hand-over in
+the chat.*
+
+### Reading a whole book, then writing about it
+
+A historical novel and a long essay sit in the Library. Asked what she thinks
+of the novel, Athena read its opening, its middle and its ending, said
+plainly that she had not read every word, and gave an honest review: what
+works (the shipyard scenes, the mystery inside history, the dialogue) and what
+could be tighter, quoting lines from the book. For the essay, she wrote a
+2,300-word synthesis of its central idea in the canvas and, on request, turned
+it into a Word document with WordCraft, rendering the pages to check the
+formatting before saying it was done.
+
+*Uses: the Library (search by meaning, reading part by part), the canvas,
+WordCraft, memory.*
+
+### An inbox that only speaks up when it matters
+
+An agent watches a Gmail inbox. For every new email it decides whether it is
+urgent (a payment problem, a deadline, a person waiting for an answer) or just
+noise, keeps track of what it has already seen, and sends an alert only for
+what needs a look. Most runs end with "nothing to report", which is the point.
+
+*Uses: the Gmail connector, PdfCraft for attachments, the agent's own memory,
+alerts.*
+
 ## What Athena does
 
 ### Talk naturally, follow the work
