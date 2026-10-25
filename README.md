@@ -6,7 +6,7 @@
 
 <p align="center">
   <b>HOMINES · AVTOMATAQVE · VNA · AD · ASTRA</b><br>
-  <i>Humans and machines, together to the stars.</i>
+  <i>Humans and automata, together to the stars.</i>
 </p>
 
 <p align="center">
