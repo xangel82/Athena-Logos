@@ -1471,6 +1471,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
+skills/cad/NOTICE.md
+Questa skill è scritta per Athena, in italiano (22/10/2026). Non copia testi di altre skill.
+
+Grazie alla documentazione ufficiale di CadQuery (github.com/CadQuery/cadquery, Apache 2.0) e alla skill di
+Jeremy Wright (github.com/jmwright/cadquery-llm-skill, Apache 2.0), da cui viene l'idea di ragionare per facce e
+lavorazioni invece che per unioni di solidi.
+
+
 skills/immagini/LICENSE.txt
 Apache License
 Version 2.0, January 2004
@@ -1683,7 +1691,7 @@ Questa skill viene dalla skill `imagegen` di OpenAI, distribuita con Codex sotto
   tolti i riferimenti agli strumenti di Codex (`image_gen`, lo script della riga di comando).
 
 
-Node.js 24.19.0 (runtime mini browser)
+Node.js 24.19.0 (mini browser and external tools runtime)
 Node.js is licensed for use as follows:
 
 """

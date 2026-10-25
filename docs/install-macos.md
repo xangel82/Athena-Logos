@@ -49,11 +49,11 @@ ATHENA_ENGINE_URL=https://192.168.1.10:30443 ATHENA_API_KEY='<the engine key>' .
 ```
 
 For a certificate of your own (for example Caddy `tls internal`), copy its root
-certificate to `~/.athena-voice/engine-ca.pem`. The same values can be changed
+certificate to `~/.athena-logos/engine-ca.pem`. The same values can be changed
 later in **Settings → AI engine**.
 
 ## Update and remove
 
 - **Update:** stop Athena (Ctrl + C in the Terminal), replace the folder with
-  the new version, start again. Your data is in `~/.athena-voice`.
-- **Remove:** delete the folder, and `~/.athena-voice` to erase all data.
+  the new version, start again. Your data is in `~/.athena-logos`.
+- **Remove:** delete the folder, and `~/.athena-logos` to erase all data.

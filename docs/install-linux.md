@@ -46,7 +46,7 @@ it once. Type the setup code, create the administrator and choose the folder
 Athena can work in.
 
 For a certificate of the engine's own (for example Caddy `tls internal`), copy
-its root certificate to `~/.athena-voice/engine-ca.pem`.
+its root certificate to `~/.athena-logos/engine-ca.pem`.
 
 ## Run as a service (optional)
 
@@ -81,6 +81,6 @@ but large jobs of the engine (videos, big models) need room.
 ## Update and remove
 
 - **Update:** `systemctl --user stop athena-logos` (or Ctrl + C), replace the
-  folder with the new version, start again. Your data is in `~/.athena-voice`.
+  folder with the new version, start again. Your data is in `~/.athena-logos`.
 - **Remove:** disable the service if you created it, delete
-  `~/athena-logos`, and `~/.athena-voice` to erase all data.
+  `~/athena-logos`, and `~/.athena-logos` to erase all data.

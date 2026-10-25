@@ -55,7 +55,7 @@ $env:ATHENA_API_KEY = "<the engine's key>"
 ```
 
 For a certificate of your own (for example Caddy `tls internal`), copy its root
-certificate to `%USERPROFILE%\.athena-voice\engine-ca.pem`. The same values can
+certificate to `%USERPROFILE%\.athena-logos\engine-ca.pem`. The same values can
 be changed later in **Settings → AI engine**.
 
 ## Start with Windows (optional)
@@ -68,6 +68,6 @@ System → About → Advanced system settings → Environment Variables).
 ## Update and remove
 
 - **Update:** close the PowerShell window, replace the folder with the new
-  version, start again. Your data is in `%USERPROFILE%\.athena-voice`.
-- **Remove:** delete the folder, and `%USERPROFILE%\.athena-voice` to erase all
+  version, start again. Your data is in `%USERPROFILE%\.athena-logos`.
+- **Remove:** delete the folder, and `%USERPROFILE%\.athena-logos` to erase all
   data.

@@ -395,7 +395,7 @@ These environment variables are optional:
 | `ATHENA_MODEL` | `Athena` | Model name served by the engine. |
 | `ATHENA_PORT` | `8080` | Athena Logos port. |
 | `ATHENA_TLS` | `auto` | `auto`: HTTPS with a self-signed certificate, redirecting HTTP on the same port; `cert`: your certificate, using `ATHENA_TLS_CERT` and `ATHENA_TLS_KEY`; `http`: plain HTTP, for use behind an HTTPS proxy. |
-| `ATHENA_DATA_DIR` | `~/.athena-voice` | Conversations, Library, attachments and settings. |
+| `ATHENA_DATA_DIR` | `~/.athena-logos` | Conversations, Library, attachments and settings. |
 | `ATHENA_WORKSPACE_ROOT` | Folder chosen at setup, otherwise the home folder | Server working area. This variable takes precedence over the setup choice. |
 | `ATHENA_SEARCH_URL` | Empty, web search off | SearXNG instance with JSON output enabled. |
 | `ATHENA_BROWSER` | `auto` | Mini browser: `auto`, `firefox`, `edge`, `chrome`, an executable path or `off`. |
@@ -415,7 +415,7 @@ devices.
   and start it again. Your data stays in the separate data folder. Reload
   browser tabs; on a phone, close and reopen the tab if needed.
 - **Remove:** stop Athena and remove any startup service you configured,
-  then delete the release folder. Delete `~/.athena-voice` (or your chosen
+  then delete the release folder. Delete `~/.athena-logos` (or your chosen
   `ATHENA_DATA_DIR`) only if you also want to erase Athena's stored data.
 
 ## Licence
