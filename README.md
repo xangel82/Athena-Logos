@@ -239,6 +239,75 @@ for the services you choose.
   <sub>Tools: what Athena knows and what she can do, at a glance.</sub>
 </p>
 
+## Safety lives in the harness, not in the model
+
+A model can be talked into things: by a web page, an email, a document, or
+by its own initiative. Athena's limits do not depend on the model agreeing to
+them. They are enforced by the harness, the code that runs every tool she
+calls, before the tool runs: the permission mode, the working folder, each
+user's role, and the destinations you block. Nothing she reads and nothing
+she writes can switch them off.
+
+### Every call she makes outside, on record
+
+**System → Network** is the trace of every call Athena makes outside your
+machine in the last 30 days. It is taken from the server's own network layer,
+not from what the model says it did: web pages, APIs, mail, Telegram and the
+mini browser, each with the user, the chat and the tool that made it, the
+domain, the IP, the outcome, and how much data went out and came in. Commands
+that name a domain or an IP, or use a network program such as `curl`, `wget`
+or `Invoke-WebRequest`, are listed too, with the action read from the command
+(a `PUT`, a file upload).
+
+The **Balance** view sums up the day, the week or the month: data out and in
+hour by hour, and for every domain its calls, its volume and when it was last
+reached. Domains that receive more than they send back are highlighted. A
+normal read downloads a lot and sends little; an upload does the opposite.
+
+### Block a domain, an address or a whole network
+
+In **Settings → Network** the administrator lists blocked destinations: a
+domain with its subdomains, a wildcard such as `*.example*`, a single
+address, an IP, a network such as `203.0.113.0/24` or a range of IPs. Any row
+of the trace has a **Block** button. Before a tool or a command reaches a
+destination on the list, the harness stops it: the call never starts, the chat
+shows why and the trace marks it in red. Athena takes it as a no from you. The
+block applies in every permission mode, **Full access** included, and to
+agents running on their own.
+
+Know the limits. Programs Athena starts (commands, local MCP servers, Claude
+Code and Codex) open their own connections, outside the server's trace. For
+those, the trace keeps the command itself, and the check reads its text: a
+destination hidden inside a script or encoded is not recognised. For a hard
+wall, add a firewall on the machine.
+
+## The machine, watched by the sentinel
+
+Connect **Athena-Engine's sentinel** and the **System** page shows the engine's
+machine live: GPU temperature, load and power, the GB10's unified memory,
+disk, the engine's services and its log, with a warning when the GPU runs hot.
+The **Models** tab lists every model configured in the engine by job (chat,
+Library, voice, transcription, video): which ones are in memory and how large
+they are. From there the administrator can stop and start the engine and see
+what is using its memory.
+
+### A different model in about a minute
+
+The engine can keep several large models installed side by side, such as
+Qwen, DeepSeek and a vision model. For the administrator, **Use this** on the
+Models tab, or **/model** in the chat, switches the chat model for everyone
+without restarting
+anything: the engine releases the model in memory and loads the new one in
+about a minute (45 seconds for the vision model in Athena-Engine's own
+measurements). The chats show a notice. Answers already in progress finish
+first, and new requests wait for the new model instead of failing. Choose
+the model that fits the work in front of you.
+
+The sentinel is safe by design. It runs a fixed list of actions, never
+arbitrary commands and never `sudo`. It has its own token, separate from the
+engine's API key, and refuses requests that come from a browser page: only
+Athena's server talks to it.
+
 ## Control stays with you
 
 Conversations, memory, the Library and working files are stored on the
@@ -269,9 +338,7 @@ injection or model mistakes.
 
 File edits made through supported tools have **Undo**. Changes made by
 commands cannot be undone that way. Administrators choose the server's
-working area and grant users roles, folders and console access. With
-**Athena-Engine's sentinel** connected, **System** shows machine status, configured
-models and logs, and lets the administrator switch the chat model.
+working area and grant users roles, folders and console access.
 
 ## Requirements
 
