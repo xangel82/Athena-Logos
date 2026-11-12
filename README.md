@@ -32,6 +32,49 @@ around your work. Inside the app, she is simply **Athena**.
 
 *Marco Palaferri, founder · [www.palaferri.com](https://www.palaferri.com/)*
 
+## New in 1.2.0: Athena gets to know your whole archive
+
+This release is about the things you already have: years of files, folders
+nobody has opened in a while, and the research you never had time for.
+
+- **Your Google Drive, finally in order.** Connect Drive and Athena reads it
+  into your Library, photos and ZIP archives included. Ask *"what's in my
+  Drive?"* and get a real answer. When you are ready, she proposes a new
+  structure built around what you actually do, shows you *before* and
+  *after* side by side, and moves the files only when you say so. Every move
+  can be undone, and nothing is ever deleted.
+- **Deep research, built in.** Ask a hard question and choose
+  **DeepAthenaLux**, up to 30 sources in a quarter of an hour, or
+  **UltraAthenaLux**, up to 60 with the strictest checks. Athena clarifies what you need, plans the sub-questions,
+  searches in rounds, takes notes that separate what is confirmed from what is
+  only inferred, then looks for evidence against her own conclusions before
+  writing the report in the canvas.
+- **A Library that scales with you.** Thousands of documents open at once.
+  Collections can now go three levels deep, *Home › Rome House › Contracts*,
+  and Athena counts, filters and lists your documents by year, type, person
+  or company.
+- **A memory you can trust.** Athena keeps dates, people and projects with
+  every fact she remembers. When she tidies her memory, she keeps the earlier
+  version instead of quietly throwing it away, and **Undo** brings it back.
+- **More of your work in the chat.** Drop in spreadsheets (Excel, ODS, CSV)
+  or any technical file: code, configurations, logs, web pages, HAR traces.
+  Athena reads them like a colleague would.
+- **A voice that sounds right.** Ask by voice and she answers the way people
+  talk, briefly; type and she writes as much as the answer needs. Aloud she
+  skips web addresses and bracketed notes, and in Italian she reads words that
+  are spelt the same but said differently with the right stress, choosing
+  from the meaning of the sentence.
+- **Your videos, anywhere.** Away from home, Athena streams a light copy of
+  your videos so a preview loads in seconds on a phone connection, while the
+  original stays one tap away.
+- **Smoother every day.** Long conversations scroll smoothly on iPhone, Mac
+  and Android tablets, new chats start faster with Athena-Engine, and the
+  Craft apps are found by themselves after installation.
+
+Updating from 1.1.0 is a matter of replacing the folder: your conversations,
+Library and settings are kept, and Athena backs up her archive before
+upgrading it.
+
 ## One assistant, two products
 
 Athena Logos connects to an **OpenAI-compatible server**, running locally or
@@ -130,7 +173,14 @@ distinguish a pause from the end of your sentence. Athena uses the engine's
 voice, with the device's system voice as a fallback. Her animated presence
 lives in Home.
 
-In chat, attach files or photos, use **/** commands and give her a direction
+Ask by voice and she answers the way people talk, in a sentence or two; type
+and she writes as much as the answer needs, question by question. Aloud she
+leaves out web addresses and bracketed notes, which stay in the written
+answer, and in Italian she gives words like *àncora* and *ancóra* the right
+stress from the meaning of the sentence.
+
+In chat, attach files, photos, spreadsheets or technical files (code,
+configurations, logs, web pages), use **/** commands and give her a direction
 while she works. Reasoning and tool calls are visible. Answers carry source
 links where available; Athena checks figures against the material at hand,
 and **Verify** checks public facts against web sources when web search is
@@ -150,10 +200,29 @@ transcribes speech and extracts video frames. Search combines words and
 meaning, with reranking when the engine provides it. Answers point back to
 the document and page, book chapter or moment in a recording.
 
-Collections keep the Library organised. Athena writes summaries and proposes
-where documents belong; you decide. The original files are also arranged in
-readable folders on disk, and you can download a collection or the whole
-Library as a ZIP.
+Collections keep the Library organised, up to three levels deep (*Family ›
+Dad › Pension*). Athena writes summaries and proposes where documents belong;
+you decide. Ask how many invoices came from a supplier last year, or which
+documents mention a person, and she counts and lists them for you. The
+Library opens at once even with thousands of documents. The original files
+are also arranged in readable folders on disk, and you can download a
+collection or the whole Library as a ZIP.
+
+### Bring your Google Drive
+
+Connect Google Drive with the permission you choose: read only, or organise.
+Athena searches it, reads Google Docs, Sheets and Slides, PDFs, Word files,
+photos and the contents of ZIP archives, and brings them into the Library
+while the engine is free. *"What's in my Drive?"* gets a real inventory: how
+many files, of which kinds, in which folders.
+
+When the Drive needs order, Athena first asks what you do and how you look
+for things, then proposes a structure around your activities and projects,
+not around file types. The plan shows the Drive as it is and as it would
+become, with the numbers behind every move. She applies it in the background,
+one area at a time if you prefer, and **Undo** puts every file back where it
+was, with its name. She never deletes anything. You can also apply the plan
+only to Athena's Library and leave Drive untouched.
 
 <p align="center">
   <img src="docs/screenshots/library.jpg" alt="The Library: documents in collections, with the record card Athena writes for each one" width="100%"><br>
@@ -162,8 +231,11 @@ Library as a ZIP.
 
 ### Keep context across your work
 
-Athena remembers preferences, people and decisions. You can inspect, correct,
-add or remove what she remembers, and ask her to search earlier conversations.
+Athena remembers preferences, people and decisions, each fact with its date
+and the people and things it is about. You can inspect, correct, add or
+remove what she remembers, and ask her to search earlier conversations. When
+she tidies her memory she keeps the earlier version of what she changes, so
+nothing disappears without you knowing, and **Undo** brings it back.
 Projects bring chats together with a working folder, instructions, their own
 memory and selected Library collections. Long conversations are compacted
 when they approach the model's context limit.
@@ -202,6 +274,19 @@ or a custom size up to 1920 pixels per side. Jobs run in a queue, the chat
 shows how far each one has got, and the finished clip arrives in the chat. Generate and edit images through a
 configured Codex subscription, or generate new images with an OpenAI API
 account.
+
+### Research that goes deep
+
+Some questions deserve more than a quick search. Choose **DeepAthenaLux**
+from the **+** in the chat (25–30 sources, about a quarter of an hour) or
+**UltraAthenaLux** (50–60 sources and the strictest verification, about 40
+minutes). Ask for official sources only, sources from a given date, or your
+own Library alongside the web. Athena asks what you need, splits the question into parts and searches in
+rounds, reading page after page. Her notes mark what is confirmed, what is
+inferred and what is still unknown. Before the report, she checks her
+conclusions with a fresh eye and looks for evidence against them. The full
+report opens in the canvas with its sources, the summary arrives in the chat,
+and you can follow the work live while it runs.
 
 ### Give recurring work to agents
 
@@ -365,7 +450,11 @@ processing. On Windows the ArtCraft Launcher installs them all and Athena finds
 them by herself; on macOS and Linux Athena needs each app's command-line tool
 (`wordcraft-cli` and the others), which the macOS builds do not ship yet.
 Video generation uses Athena-Engine's LTX 2.5 service, and System
-management uses its sentinel. Word search remains available without semantic
+management uses its sentinel. Light copies of videos for viewing away from
+home need FFmpeg, which the administrator installs from **Settings → Tools**
+with one click (on macOS through Homebrew). Google Drive needs a Google
+connection set up in **Settings → Connectors**, and deep research needs web
+search. Word search remains available without semantic
 search. The mini browser uses an installed Firefox, Edge or Chrome; web
 search uses a configured SearXNG instance.
 
