@@ -401,7 +401,9 @@ With a local engine, model processing stays on your machines. With a hosted
 server, the conversation, attachments, document excerpts and tool results
 included in a request are sent to that provider. Web searches, connected
 services and external AIs also send the information needed for their requests
-when you use them.
+when you use them. Athena Logos sends us no telemetry, usage statistics or
+personal data. Where each kind of data goes, service by service, is on the
+[EULA and Privacy](https://www.palaferri.com/athena/en/privacy.html) page.
 
 Three permission modes let you choose how Athena acts:
 
@@ -589,7 +591,10 @@ Athena-Engine, with an additional permission for small companies:
   separate licence; [open an issue](https://github.com/xangel82/athena-logos/issues)
   to get in touch.
 
-The [licence text](LICENSE) is what applies. Third-party components retain
+The [licence text](LICENSE) is what applies; a plain-language summary, the
+privacy notice and what to expect from the models' answers are on the
+[EULA and Privacy](https://www.palaferri.com/athena/en/privacy.html) page.
+Third-party components retain
 their own licences; see [THIRD-PARTY-NOTICES](THIRD-PARTY-NOTICES). Video
 generation uses Lightricks' LTX 2.5 and is also subject to the
 [LTX-2.x Community License](https://github.com/Lightricks/LTX-2/blob/main/LICENSE-2_x)
